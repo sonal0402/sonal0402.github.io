@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Letter for You</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: #f5f1ec; /* off-white */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Georgia, serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Floating Emojis */
+        .emoji {
+            position: absolute;
+            font-size: 24px;
+            opacity: 0.5;
+            animation: float 8s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Envelope */
+        .envelope {
+            position: relative;
+            width: 520px;
+            height: 340px;
+            background: #6b2e2e; /* muted burgundy */
+            border-radius: 12px;
+            box-shadow: 0 30px 50px rgba(0,0,0,0.25);
+        }
+
+        /* Envelope flap */
+        .flap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 260px solid transparent;
+            border-right: 260px solid transparent;
+            border-top: 170px solid #7b3a3a; /* lighter burgundy */
+            transform-origin: top;
+            animation: openFlap 1.8s forwards;
+            animation-delay: 2s;
+            z-index: 3;
+        }
+
+        @keyframes openFlap {
+            to { transform: rotateX(180deg); }
+        }
+
+        /* Letter card — HIDDEN INITIALLY */
+        .letter {
+            position: absolute;
+            left: 50%;
+            bottom: 40px;
+            transform: translateX(-50%);
+            width: 440px;
+            background: #faf4ec; /* beige paper */
+            border-radius: 14px;
+            padding: 38px;
+            text-align: center;
+            box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+            opacity: 0;
+            z-index: 4;
+
+            animation: slideOut 2s forwards;
+            animation-delay: 3.5s;
+        }
+
+        @keyframes slideOut {
+            0% {
+                bottom: 40px;
+                opacity: 0;
+            }
+            30% {
+                opacity: 1;
+            }
+            100% {
+                bottom: 190px;
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 32px;
+            color: #6b2e2e;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #4a3525;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 12px 36px;
+            background: #6b2e2e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #4a1f1f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating Emojis -->
+    <div class="emoji" style="top:10%; left:15%;">💌</div>
+    <div class="emoji" style="top:20%; right:20%;">💕</div>
+    <div class="emoji" style="bottom:15%; left:25%;">✨</div>
+    <div class="emoji" style="bottom:20%; right:15%;">🎂</div>
+
+    <div class="envelope">
+        <div class="flap"></div>
+
+        <div class="letter">
+            <h1>A Letter for You</h1>
+            <p>
+                A small corner of the internet,<br>
+                created slowly and thoughtfully,<br>
+                with only one person in mind.
+                <br><br>
+                Take your time.
+                Everything inside is meant for you.
+            </p>
+
+            <a href="home.html" class="btn">Begin here 🤍</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+

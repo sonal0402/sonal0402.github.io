@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For You</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: #f5f1ec; /* off-white background */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* allows scroll */
+            padding: 80px 20px;
+        }
+
+        /* subtle background decor */
+        body::before,
+        body::after {
+            content: "";
+            position: fixed;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: rgba(120, 95, 70, 0.08);
+            z-index: 0;
+        }
+
+        body::before {
+            top: -120px;
+            left: -120px;
+        }
+
+        body::after {
+            bottom: -120px;
+            right: -120px;
+        }
+
+        /* Letter paper */
+        .letter-card {
+            background:
+                repeating-linear-gradient(
+                    to bottom,
+                    #faf4ec,
+                    #faf4ec 30px,
+                    #d8c7b6 31px
+                );
+            max-width: 760px;
+            width: 100%;
+            padding: 65px 65px 75px;
+            border-radius: 18px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.18);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* paper edge */
+        .letter-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 18px;
+            box-shadow: inset 0 0 0 1px rgba(120,95,70,0.18);
+            pointer-events: none;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6b4a2f; /* brown */
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .letter-text {
+            font-family: 'Segoe Script', 'Comic Sans MS', 'Lucida Handwriting', cursive;
+            font-size: 18px;
+            line-height: 31px; /* matches paper lines */
+            color: #4a3525;
+        }
+
+        .signature {
+            margin-top: 55px;
+            font-size: 18px;
+            font-family: 'Segoe Script', 'Comic Sans MS', cursive;
+            color: #6b4a2f;
+        }
+
+        .back {
+            text-align: center;
+            margin-top: 55px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: #6b4a2f;
+            font-size: 16px;
+            border-bottom: 1px solid #6b4a2f;
+        }
+
+        .back a:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="letter-card">
+        <h1>Happy Birthday, Love</h1>
+
+        <div class="letter-text">
+            Today isn’t just about candles or wishes, it’s about you.
+            About the way you exist so effortlessly in my life, making things
+            lighter without even trying.<br><br>
+
+            I don’t know when exactly you became my safe place, but somewhere
+            between random conversations, quiet understanding, and moments that
+            didn’t need words, you did.<br><br>
+
+            You make ordinary days feel softer. You make difficult days feel
+            manageable. And you make happiness feel easy.<br><br>
+
+            On your birthday, I just want you to know this, you are loved more
+            than you realise, appreciated more than you know, and celebrated
+            in more ways than one, including this little letter written just
+            for you.
+        </div>
+
+        <div class="signature">
+            Always,<br>
+            Me 🤍
+        </div>
+
+        <div class="back">
+            <a href="home.html">← Back to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>
+

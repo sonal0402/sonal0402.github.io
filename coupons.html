@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Surprise Coupons</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: #f5f1ec;
+            padding: 80px 40px;
+            color: #4a3525;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #6b4a2f;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #7a6450;
+            margin-bottom: 60px;
+        }
+
+        .coupons {
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        details {
+            background: #faf4ec;
+            border-radius: 18px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+            padding: 30px 35px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        summary {
+            list-style: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #6b4a2f;
+            cursor: pointer;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: " ⤵ open";
+            font-size: 14px;
+            color: #8a7864;
+            font-weight: normal;
+        }
+
+        details[open] summary::after {
+            content: " ✓ opened";
+            color: #6b4a2f;
+        }
+
+        .coupon-content {
+            margin-top: 22px;
+            font-family: 'Segoe Script', 'Comic Sans MS', 'Lucida Handwriting', cursive;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #4a3525;
+        }
+
+        .redeem {
+            margin-top: 25px;
+            padding: 10px 22px;
+            border: 1px dashed #6b4a2f;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #6b4a2f;
+            display: inline-block;
+            font-family: Georgia, serif;
+        }
+
+        .note {
+            margin-top: 12px;
+            font-size: 13px;
+            color: #8a7864;
+        }
+
+        .back {
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: #6b4a2f;
+            font-size: 16px;
+            border-bottom: 1px solid #6b4a2f;
+        }
+
+        .back a:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Surprise Coupons 🎁</h1>
+    <div class="subtitle">
+        Open only when you want to redeem one.
+    </div>
+
+    <div class="coupons">
+
+        <details>
+            <summary>🤍 Unlimited Hugs</summary>
+            <div class="coupon-content">
+                Redeem this whenever you feel low, happy, tired,
+                or when you just need a hug without explaining why.
+            </div>
+            <div class="redeem">Redeemed when opened 💌</div>
+            <div class="note">Valid forever.</div>
+        </details>
+
+        <details>
+            <summary>🍔 Food Date on Me</summary>
+            <div class="coupon-content">
+                One guilt-free food date where you choose the place,
+                the food, and I promise not to steal your fries.
+            </div>
+            <div class="redeem">Redeemed when opened 💌</div>
+            <div class="note">Redeem anytime.</div>
+        </details>
+
+        <details>
+            <summary>😌 Bad Day Rescue Pass</summary>
+            <div class="coupon-content">
+                For days when work is annoying, people are annoying,
+                or everything just feels off.
+                Comes with patience and comfort.
+            </div>
+            <div class="redeem">Redeemed when opened 💌</div>
+            <div class="note">Use as needed.</div>
+        </details>
+
+        <details>
+            <summary>🎮 Your Choice Day</summary>
+            <div class="coupon-content">
+                You decide what we do, what we watch,
+                what we eat, and I won’t argue. Promise.
+            </div>
+            <div class="redeem">One full day 💌</div>
+        </details>
+
+        <details>
+            <summary>💬 Say Anything Pass</summary>
+            <div class="coupon-content">
+                One safe space where you can say absolutely anything
+                without judgement, interruptions, or solutions.
+            </div>
+            <div class="redeem">Unlimited 💌</div>
+        </details>
+
+        <details>
+            <summary>💌 Emergency Love Reminder</summary>
+            <div class="coupon-content">
+                For moments when you forget how loved you are.
+                Comes with reassurance and warmth.
+            </div>
+            <div class="redeem">Always valid 💌</div>
+        </details>
+
+    </div>
+
+    <div class="back">
+        <a href="home.html">← Back to Home</a>
+    </div>
+
+</body>
+</html>

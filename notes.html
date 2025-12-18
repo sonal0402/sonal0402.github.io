@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes for You</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background:
+                radial-gradient(circle at top left, rgba(107,46,46,0.08), transparent 40%),
+                radial-gradient(circle at bottom right, rgba(107,46,46,0.06), transparent 45%),
+                #f6f1eb;
+            padding: 90px 40px;
+            color: #4a3525;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 44px;
+            color: #6b2e2e;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #7b5a5a;
+            margin-bottom: 70px;
+        }
+
+        .notes {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-items: start;
+        }
+
+        details {
+            background: #fbf6f0;
+            border-radius: 22px;
+            box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+            padding: 26px 26px;
+            cursor: pointer;
+            border-top: 5px solid #6b2e2e;
+        }
+
+        summary {
+            list-style: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #6b2e2e;
+            cursor: pointer;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: "  💌 open";
+            font-size: 14px;
+            color: #8a6b6b;
+            font-weight: normal;
+        }
+
+        details[open] summary::after {
+            content: "  🤍 reading";
+            color: #6b2e2e;
+        }
+
+        .note-text {
+            margin-top: 22px;
+            font-family: 'Segoe Script', 'Comic Sans MS', 'Lucida Handwriting', cursive;
+            font-size: 17px;
+            line-height: 1.9;
+            color: #4a2f2f;
+            max-height: 260px;
+            overflow-y: auto;
+            padding-right: 6px;
+        }
+
+        .note-text::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .note-text::-webkit-scrollbar-thumb {
+            background: rgba(107,46,46,0.35);
+            border-radius: 10px;
+        }
+
+        .note-end {
+            margin-top: 16px;
+            font-size: 14px;
+            color: #8a6b6b;
+        }
+
+        /* FINAL SCROLL NOTE */
+        .final-note {
+            grid-column: 1 / -1;
+            margin-top: 50px;
+        }
+
+        .final-note details {
+            background: #f3e7dc;
+            border-radius: 28px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            padding: 35px 40px;
+            border: 2px solid #6b2e2e;
+            position: relative;
+        }
+
+        .final-note details::before {
+            content: "";
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 36px;
+            background: #6b2e2e;
+            border-radius: 0 0 18px 18px;
+        }
+
+        .final-note summary {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6b2e2e;
+            text-align: center;
+        }
+
+        .final-note summary::after {
+            content: "  (click to open)";
+            font-size: 14px;
+            font-weight: normal;
+            color: #8a6b6b;
+        }
+
+        .scroll-paper {
+            margin-top: 30px;
+            padding: 60px 70px;
+            background:
+                repeating-linear-gradient(
+                    to bottom,
+                    #faf4ec,
+                    #faf4ec 30px,
+                    #d8c7b6 31px
+                );
+            border-radius: 18px;
+            font-family: 'Segoe Script', 'Comic Sans MS', 'Lucida Handwriting', cursive;
+            font-size: 19px;
+            line-height: 31px;
+            color: #4a2f2f;
+        }
+
+        .back {
+            text-align: center;
+            margin-top: 90px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: #6b2e2e;
+            font-size: 16px;
+            border-bottom: 1px solid #6b2e2e;
+        }
+
+        .back a:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Notes for You 📝</h1>
+<div class="subtitle">
+    Things I wanted to say slowly, honestly, and with love.
+</div>
+
+<div class="notes">
+
+    <details>
+        <summary>When I made you feel unseen 🫶</summary>
+        <div class="note-text">
+            I know there have been moments where I didn’t notice you the way I should have.
+            Moments where you were right there, trying, caring, showing up,
+            and I was too caught up in my own thoughts, emotions, or noise to truly see you.
+            <br><br>
+            I want you to know it was never because you weren’t enough.
+            It was because I wasn’t present enough.
+            <br><br>
+            I’m learning to be more aware, more intentional,
+            and more gentle with the way I show you that you matter.
+            You deserve to feel seen, valued, and chosen.
+        </div>
+        <div class="note-end">I’m still learning 🤍</div>
+    </details>
+
+    <details>
+        <summary>When my words hurt you 💔</summary>
+        <div class="note-text">
+            Sometimes I speak before I fully think,
+            especially when emotions are high.
+            And in those moments, my words may have landed heavier
+            than I ever intended.
+            <br><br>
+            Hurting you is never my intention,
+            even when I’m upset or overwhelmed.
+            My love for you doesn’t disappear in conflict.
+            <br><br>
+            I’m learning to slow down,
+            to choose softness alongside honesty,
+            and to remember that how I say things matters just as much as what I say.
+        </div>
+        <div class="note-end">Choosing gentleness 💭</div>
+    </details>
+
+    <details>
+        <summary>When I panicked instead of listening 😔</summary>
+        <div class="note-text">
+            There are times when my fear speaks louder than my calm.
+            When I panic, I react instead of listening,
+            and I know that can make you feel unheard or pushed away.
+            <br><br>
+            I’m sorry for the moments where I didn’t give you the space
+            to finish your thoughts or explain your feelings.
+            <br><br>
+            I’m learning that not every situation needs fixing immediately.
+            Sometimes it just needs patience, silence, and trust.
+        </div>
+        <div class="note-end">Learning to breathe 🤍</div>
+    </details>
+
+    <details>
+        <summary>When I wasn’t patient enough ⏳</summary>
+        <div class="note-text">
+            I know patience hasn’t always been my strongest suit.
+            There were moments where I rushed conversations,
+            expected answers too quickly,
+            or forgot that everyone processes things differently.
+            <br><br>
+            I’m sorry for the times I made you feel pressured instead of supported.
+            You deserved grace, not urgency.
+            <br><br>
+            I’m learning to slow down
+            and trust the pace of us.
+        </div>
+        <div class="note-end">Still growing 🌱</div>
+    </details>
+
+    <details>
+        <summary>When I misunderstood you 💬</summary>
+        <div class="note-text">
+            There have been moments where assumptions filled the gaps
+            instead of understanding.
+            Where I heard your words,
+            but missed your intention.
+            <br><br>
+            I’m sorry for the times I didn’t ask more questions,
+            didn’t pause,
+            or didn’t give you the benefit of the doubt you deserve.
+            <br><br>
+            I’m learning to listen beyond my fears
+            and trust the love behind your actions.
+        </div>
+        <div class="note-end">Choosing trust 🤍</div>
+    </details>
+
+    <details>
+        <summary>When sorry wasn’t enough 🌧️</summary>
+        <div class="note-text">
+            I know there are moments where a simple sorry doesn’t fix the hurt.
+            Where the impact lasts longer than the apology.
+            <br><br>
+            I want you to know my remorse isn’t only in words,
+            it’s in reflection, effort, and the intention to do better.
+            <br><br>
+            I may stumble, but I’m committed to growing,
+            learning, and loving you better every day.
+        </div>
+        <div class="note-end">With all my heart 🤍</div>
+    </details>
+
+    <div class="final-note">
+        <details>
+            <summary>Thank you for staying 🤍</summary>
+            <div class="scroll-paper">
+                If you’re reading this, it means you stayed.
+                Through the long notes, the uncomfortable honesty,
+                the softer admissions, and the parts where I wasn’t perfect.
+                <br><br>
+                Thank you for staying when things weren’t easy.
+                Thank you for listening even when it was hard.
+                Thank you for choosing patience, understanding,
+                and love, again and again.
+                <br><br>
+                I know I don’t always get things right.
+                I know I’m still learning, still growing,
+                still figuring out how to love you better.
+                But my intention has always been you.
+                <br><br>
+                Thank you for being here.
+                Thank you for choosing us.
+                And thank you, always, for staying.
+            </div>
+        </details>
+    </div>
+
+</div>
+
+<div class="back">
+    <a href="home.html">← Back to Home</a>
+</div>
+
+</body>
+</html>
+
+
+
